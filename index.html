@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>Skyline</title>
+		<link rel="stylesheet" href="app.css" />
+	</head>
+	<body>
+		
+		<div class="container">
+			<div id="info">
+				<div class="box">
+					<div class="form">
+						<h3 class="title">Input</h3>
+						<div class="control">
+							<label for="input_width">
+								<span>Width</span>
+							</label>
+							<div class="">
+								<input type="number" id="input_width" class="input" placeholder="Width" onChange="onWidthChanged();" value="1280" />
+							</div>
+						</div>
+						<div class="control">
+							<label for="input_height">
+								<span>Height</span>
+							</label>
+							<div class="">
+								<input type="number" id="input_height" class="input" placeholder="Height" onChange="onHeightChanged();" value="720" />
+							</div>
+						</div>
+						<div class="control">
+							<label for="input_color">
+								<span>Base Color</span>
+							</label>
+							<div class="">
+								<select id="input_color" class="input select">
+									<option value="1">Pitch Black</option>
+									<option value="2">Light Gray</option>
+									<option value="3" selected="selected">Medium Gray</option>
+									<option value="4">Gray</option>
+									<option value="5">Dark Gray</option>
+								</select>
+							</div>
+						</div>
+						<div class="control">
+							<label for="input_delay">
+								<span>Delay</span>
+							</label>
+							<div class="">
+								<input type="number" id="input_delay" class="input" placeholder="Delay" value="500" />
+							</div>
+						</div>
+						<div class="control">
+							<button id="btn_go" class="btn" onClick="OnGoPressed();">
+								<span>Go</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="showtime">
+				<div class="controls">
+					<button id="btn_reset" class="btn" onClick="OnResetPressed();">
+						<span>Reset</span>
+					</button>
+				</div>
+				<div class="skyline-wrapper">
+					<div id="skyline_canvas"></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="skyline.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,133 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+
+html {
+	font-size: 14px;
+}
+
+body {
+
+	margin: 0;
+	padding: 0;
+
+	color: #2c3e50;
+	background-color: #f7f7f7;
+	font-family: "Avenir", Helvetica, Arial, sans-serif;  
+}
+
+#info {
+	display: block;
+	padding: 10px;
+}
+
+#showtime {
+	display: none;
+}
+
+.controls {
+	margin: 10px auto;
+	text-align: center;
+	width: 60%;
+}
+
+.box {
+
+	width: 100%;
+	margin: 20px auto;
+}
+
+
+.form {
+	
+	padding: 10px;
+	border: 1px solid #ddd;
+	background: #fff;
+
+	margin: 10px auto;
+	text-align: left;
+
+	padding: 20px;
+	width: 80%;
+
+	max-width: 1200px;
+	box-shadow: 0 8px 8px rgba(10,10,10,.1);
+}
+
+.form .title {
+
+	font-size: 2.5rem;
+	margin-top: 0;
+	border-bottom: 1px solid #ddd;
+}
+
+
+.control {
+	margin: 10px 0 20px;
+}
+
+
+.control label {
+	display: block;
+	font-size: 1.5rem;
+	margin-bottom: 5px;
+}
+
+
+.input {
+	background: #fff;
+	width: 100%;
+	border: 1px solid #ddd;
+	padding: 10px 5px;
+	font-size: 1.3rem;
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 10px #ddd;
+}
+
+.select {
+	height: 40px;
+}
+
+.btn {
+	width: 100%;
+	display: block;
+	padding: 10px 5px;
+	background: #009688;
+	font-size: 1.3rem;
+	color: #fff;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+
+
+
+.skyline-wrapper {
+	width: 90%;
+	margin: 30px auto;
+	padding: 0;
+	position: relative;
+	overflow-x: scroll;
+}
+
+.skyline-wrapper #skyline_canvas {
+	display: block;
+	position: relative;
+}
+
+.skyline-wrapper #skyline_canvas .building {
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+}
